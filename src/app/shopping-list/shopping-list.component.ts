@@ -19,4 +19,8 @@ export class ShoppingListComponent implements OnInit {
   onIngreditenAdded(ingredient: Ingredient) {
     this.ingredients.push(ingredient);
   }
+
+  onClearRecipes(){
+    this.ingredients = [];
+  }
 }
